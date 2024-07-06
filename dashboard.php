@@ -18,8 +18,6 @@ if ($result->num_rows > 0) {
     header('Location: login.php');
     exit();
 }
-
-// Calculate total expenses
 $total_expenses = 0;
 $sql = "SELECT SUM(amount) AS total FROM expenses WHERE user_id='$user_id'";
 $result = $conn->query($sql);
