@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%;
     word-wrap: break-word;
 }
 .header h1{
@@ -45,7 +45,7 @@ body {
     width: 50%;
     text-align: center; 
     margin-bottom: 60px;
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%; 
     word-wrap: break-word;
 }
 .container1 {
@@ -57,7 +57,7 @@ body {
     width: 50%;
     text-align: center; 
     margin-bottom: 60px;
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%; 
     word-wrap: break-word;
 }
 .container2 {
@@ -69,7 +69,7 @@ body {
     width: 50%;
     text-align: center;
     margin-bottom: 60px; 
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%;
     word-wrap: break-word;
 }
 .container3 {
@@ -81,7 +81,7 @@ body {
     width: 50%;
     text-align: center; 
     margin-bottom: 60px;
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%;
     word-wrap: break-word;
 }
 .container4 {
@@ -93,7 +93,7 @@ body {
     width: 50%;
     text-align: center; 
     margin-bottom: 60px;
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%; 
     word-wrap: break-word;
 }
 
@@ -122,7 +122,7 @@ form button:hover {
     justify-content: space-around;
     margin-bottom: 20px;
     text-align: center; 
-    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    max-width: 100%;
     word-wrap: break-word;
 }
 
