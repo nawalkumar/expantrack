@@ -20,24 +20,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<div class="container">
-    <h1>Sign Up</h1>
+<div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-1/2 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <h1 class="ml-5 mb-12 text-4xl font-bold">Sign Up</h1>
     <form id="signupForm" action="signup.php" method="POST">
-        <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z\s]{1,}">
-        <input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <input type="password" name="password" id="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$" title="Password must be at least 6 characters long and include at least one letter, one number, and one special character.">
-        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$" title="Password must be at least 6 characters long and include at least one letter, one number, and one special character.">
-        <input type="number" name="age" placeholder="Age" required min="1" max="150">
-        <select name="gender" required>
+        <input type="text" name="name" placeholder="Name" required pattern="[A-Za-z\s]{1,}" class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg">
+        <input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <input type="password" name="password" id="password" placeholder="Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$" title="Password must be at least 6 characters long and include at least one letter, one number, and one special character." class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,}$" title="Password must be at least 6 characters long and include at least one letter, one number, and one special character." class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <input type="number" name="age" placeholder="Age" required min="1" max="150"  class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <select name="gender" required class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
             <option value="" disabled selected>Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
         </select>
-        <input type="text" name="mobile" placeholder="Mobile" required pattern="\d{10}">
-        <button type="submit">Sign Up</button>
+        <input type="text" name="mobile" placeholder="Mobile" required pattern="\d{10}" class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <button type="submit" class="block w-11/12 mb-4 ml-6 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Sign Up</button>
     </form>
-    <a href="login.php">Already have an account? Login</a>
+    <a href="login.php" class="text-black-600 no-underline mr-5 font-bold hover:underline">Already have an account? Login</a>
 </div>
 
 <script>

@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-image:url(img1.jpg); */
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center; 
+}
+
+.header {
+    width:100%;
+    background-color: #0e3fc6;
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.header h1{
+    margin-left: 20px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center; 
+    margin-bottom: 60px;
+    max-width: 100%; 
+    word-wrap: break-word;
+}
+.container button a{
+    
+    color: white;
+   
+}
+.container button{
+    background-color: #007BFF;
+    padding:5px;
+    border: 1px solid #1c14c1;
+    border-radius: 5px;
+}
+.container1 {
+    background: #d73232;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center; 
+    margin-bottom: 60px;
+    max-width: 100%; 
+    word-wrap: break-word;
+}
+.container2 {
+    background: #b4cc2e;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 60px; 
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.container3 {
+    background: #39d199;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center; 
+    margin-bottom: 60px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.container4 {
+    background: #c739d1;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 50%;
+    text-align: center; 
+    margin-bottom: 60px;
+    max-width: 100%; 
+    word-wrap: break-word;
+}
+
+form input, form select, form textarea, form button {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center; 
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.dashboard-item1 {
+    background: #d93737;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+.dashboard-item2 {
+    background: #8a7224;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.dashboard-item3 {
+    background: #edefe9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.actions a {
+    display: block;
+    text-decoration: none;
+    color: #007BFF;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.actions a:hover {
+    background: #ced4da;
+}
+
+.expenses-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.expense-item {
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.expense-item h2 {
+    margin-top: 0;
+}
+
+.expense-item a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.expense-item a:hover {
+    text-decoration: underline;
+}
+
+.filter-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center; 
+}
+
+.filter-form .sort {
+    display: flex;
+    align-items: center;
+}
+
+.filter-form .filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-form input, .filter-form select, .filter-form button {
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center; 
+}
+
+.filter-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-form button:hover {
+    background-color: #0056b3;
+}
+
+.sort-dropdown {
+    flex-grow: 1;
+    text-align: left; /* Align sort dropdown left */
+}
+
+.filter-dropdown {
+    flex-grow: 1;
+    text-align: right; /* Align filter dropdown to the right */
+}
+
+.footer {
+    width: 100%;
+    background-color: #050505;
+    color: rgb(17, 17, 17);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+   
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+    word-wrap: break-word;
+   
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    
+}
+@media (max-width: 1200px) {
+    .container, .container1, .container2, .container3, .container4 {
+        width: 70%;
+    }
+
+    .dashboard-item1, .dashboard-item2, .dashboard-item3 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container1, .container2, .container3, .container4 {
+        width: 90%;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-item1, .dashboard-item2, .dashboard-item3 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .filter-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-form label, .filter-form input, .filter-form select, .filter-form button {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .sort-dropdown, .filter-dropdown {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header a {
+        margin: 0 5px;
+    }
+    .actions a {
+        padding: 5px;
+    }
+}

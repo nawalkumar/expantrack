@@ -55,33 +55,33 @@ if ($result->num_rows > 0) {
     $monthly_expenses = $monthly['total'];
 }
 ?>
-<div class="container">
-   
-    <h1>Welcome, <?php echo htmlspecialchars($user_name); ?>!</h1>
-    <p>Your Expenses !</p>
-
-    <div class="dashboard-container">
-        <div class="dashboard-item1">
-            <h2>Daily Expenses</h2>
-            <p>Total: <?php echo $daily_expenses; ?></p>
-            <a href="view_daily_expenses.php">View Daily Expenses</a>
+<div class="bg-red-400 p-5 mt-5 shadow-lg  rounded-lg w-11/12 md:w-7/10 lg:w-4/5 mt-12 mb-16 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <h1 class="ml-5 mb-4 text-3xl font-bold" >Welcome, Mr. <?php echo htmlspecialchars($user_name); ?>!</h1>
+    <p class="text-xl mb-3"> See Your Expenses below !</p>
+</div>
+<div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-4/5  mx-auto mb-13 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <div class="flex flex-col lg:flex-row justify-around mb-5 text-center  ">
+        <div  class="bg-red-500 p-5 rounded-lg w-full lg:w-1/3 mb-5 lg:mb-0 hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+            <h2 class="ml-5 mb-4 text-3xl font-bold">Daily Expenses</h2>
+            <p class="text-xl mb-3">Total: <?php echo $daily_expenses; ?></p>
+            <a href="view_daily_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline">View Daily Expenses</a>
         </div>
-        <div class="dashboard-item2">
-            <h2>Weekly Expenses</h2>
-            <p>Total: <?php echo $weekly_expenses; ?></p>
-            <a href="view_weekly_expenses.php">View Weekly Expenses</a>
+        <div class="bg-yellow-600 p-5 rounded-lg w-full lg:w-1/3 mb-5 lg:mb-0  hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+            <h2 class="ml-5 mb-4 text-3xl font-bold">Weekly Expenses</h2>
+            <p class="text-xl mb-3">Total: <?php echo $weekly_expenses; ?></p>
+            <a href="view_weekly_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline">View Weekly Expenses</a>
         </div>
-        <div class="dashboard-item3">
-            <h2>Monthly Expenses</h2>
-            <p>Total: <?php echo $monthly_expenses; ?></p>
-            <a href="view_monthly_expenses.php">View Monthly Expenses</a>
+        <div class="bg-gray-200 p-5 rounded-lg w-full lg:w-1/3  hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+            <h2 class="ml-5 mb-4 text-3xl font-bold">Monthly Expenses</h2>
+            <p class="text-xl mb-3">Total: <?php echo $monthly_expenses; ?></p>
+            <a href="view_monthly_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline" >View Monthly Expenses</a>
         </div>
     </div>
 
     <div class="actions">
-        <a href="add_expense.php">Add Expense</a>
-        <a href="view_expenses.php">See All Expenses</a>
-        <a href="graphical_view.php">Graphical view</a>
+        <a href="add_expense.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Add Expense</a>
+        <a href="view_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">See All Expenses</a>
+        <a href="graphical_view.php" class="block no-underline text-blue-500 text-2xl  p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Graphical view</a>
     </div>
 </div>
 <?php

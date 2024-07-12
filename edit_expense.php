@@ -37,20 +37,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<div class="container">
-    <h1>Edit Expense</h1>
+<div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-1/2 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <h1 class="ml-5 mb-9 text-3xl font-bold">Edit Expense</h1>
     <form action="edit_expense.php?id=<?php echo $expense_id; ?>" method="POST">
-        <input type="text" name="item_name" placeholder="Item Name" value="<?php echo htmlspecialchars($expense['item_name']); ?>" required>
-        <input type="number" name="amount" placeholder="Amount" value="<?php echo $expense['amount']; ?>" required min= "0">
-        <input type="date" name="date" placeholder="Date" value="<?php echo $expense['date']; ?>" required>
-        <textarea name="description" placeholder="Description" required><?php echo htmlspecialchars($expense['description']); ?></textarea>
-        <select name="category" required>
+        <input type="text" name="item_name" placeholder="Item Name" value="<?php echo htmlspecialchars($expense['item_name']); ?>" required class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg">
+        <input type="number" name="amount" placeholder="Amount" value="<?php echo $expense['amount']; ?>" required min= "0" class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg">
+        <input type="date" name="date" placeholder="Date" value="<?php echo $expense['date']; ?>" required class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg" >
+        <textarea name="description" placeholder="Description" required class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg"><?php echo htmlspecialchars($expense['description']); ?></textarea>
+        <select name="category" required class="block w-11/12 mb-4 p-2 ml-6 border border-gray-300 rounded-lg">
             <option value="food" <?php if ($expense['category'] == 'food') echo 'selected'; ?>>Food</option>
             <option value="electricity" <?php if ($expense['category'] == 'electricity') echo 'selected'; ?>>Electricity</option>
             <option value="transportation" <?php if ($expense['category'] == 'transportation') echo 'selected'; ?>>Transportation</option>
             <option value="others" <?php if ($expense['category'] == 'others') echo 'selected'; ?>>Others</option>
         </select>
-        <button type="submit">Update Expense</button>
+        <button type="submit"  class="block w-11/12 mb-4 ml-6 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Update Expense</button>
     </form>
 </div>
 <?php

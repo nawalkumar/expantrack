@@ -50,8 +50,8 @@ if ($result_daily->num_rows > 0) {
 }
 ?>
 
-<div class="container">
-    <h1><?php echo ucfirst($view_type); ?> Expenses Graph</h1>
+<div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-1/2 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <h1 class="ml-5 mb-4 text-3xl font-bold"><?php echo ucfirst($view_type); ?> Expenses Graph</h1>
     <div id="chartContainerCategory" style="height: 370px; width: 100%;"></div>
     <?php if ($view_type != 'daily'): ?>
         <div id="chartContainerDaily" style="height: 370px; width: 100%; margin-top: 30px;"></div>
@@ -101,9 +101,9 @@ if ($result_daily->num_rows > 0) {
     </script>
 
     <div class="actions">
-        <a href="view_daily_expenses.php">Daily Expenses</a>
-        <a href="view_weekly_expenses.php">Weekly Expenses</a>
-        <a href="view_monthly_expenses.php">Monthly Expenses</a>
+        <a href="view_daily_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Daily Expenses</a>
+        <a href="view_weekly_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Weekly Expenses</a>
+        <a href="view_monthly_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Monthly Expenses</a>
     </div>
 </div>
 

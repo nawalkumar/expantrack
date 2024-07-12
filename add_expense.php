@@ -26,21 +26,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<div class="container">
-    <h1>Add Expense</h1>
+<div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-1/2 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <h1 class="ml-5 mb-9 text-3xl font-bold">Add Expense</h1>
     <form action="add_expense.php" method="POST">
-        <input type="text" name="item_name" placeholder="Item Name" required>
-        <input type="number" name="amount" placeholder="Amount" required min="0">
-        <input type="date" name="date" placeholder="Date" required>
-        <textarea name="description" placeholder="Description" required></textarea>
-        <select name="category" required>
+        <input type="text" name="item_name" placeholder="Item Name" required class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <input type="number" name="amount" placeholder="Amount" required min="0" class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <input type="date" name="date" placeholder="Date" required class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
+        <textarea name="description" placeholder="Description" required class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg"></textarea>
+        <select name="category" required class="block w-11/12 mb-4 ml-6 p-2 border border-gray-300 rounded-lg">
             <option value="">catogery</option>
             <option value="food">Food</option>
             <option value="electricity">Electricity</option>
             <option value="transportation">Transportation</option>
             <option value="others">Others</option>
         </select>
-        <button type="submit">Add Expense</button>
+        <button type="submit" class="block w-11/12 mb-4 ml-6 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">Add Expense</button>
     </form>
 </div>
 <?php
