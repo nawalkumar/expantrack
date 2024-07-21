@@ -60,18 +60,18 @@ if ($result->num_rows > 0) {
     <p class="text-xl mb-3"> See Your Expenses below !</p>
 </div>
 <div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-4/5  mx-auto mb-13 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
-    <div class="flex flex-col lg:flex-row justify-around mb-5 text-center  ">
-        <div  class="bg-red-500 p-5 rounded-lg w-full lg:w-1/3 mb-5 lg:mb-0 hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+    <div class="flex flex-col lg:flex-row lg:gap-2 justify-around  mb-5 text-center  ">
+        <div  class="bg-red-500 p-5 rounded-lg w-full  mb-5 lg:mb-0 hover-grow transition-transform duration-300 ease-in-out rounded-lg">
             <h2 class="ml-5 mb-4 text-3xl font-bold">Daily Expenses</h2>
             <p class="text-xl mb-3">Total: <?php echo $daily_expenses; ?></p>
             <a href="view_daily_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline">View Daily Expenses</a>
         </div>
-        <div class="bg-yellow-600 p-5 rounded-lg w-full lg:w-1/3 mb-5 lg:mb-0  hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+        <div class="bg-yellow-600 p-5 rounded-lg w-full  mb-5 lg:mb-0  hover-grow transition-transform duration-300 ease-in-out rounded-lg">
             <h2 class="ml-5 mb-4 text-3xl font-bold">Weekly Expenses</h2>
             <p class="text-xl mb-3">Total: <?php echo $weekly_expenses; ?></p>
             <a href="view_weekly_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline">View Weekly Expenses</a>
         </div>
-        <div class="bg-gray-200 p-5 rounded-lg w-full lg:w-1/3  hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+        <div class="bg-gray-200 p-5 rounded-lg w-full   hover-grow transition-transform duration-300 ease-in-out rounded-lg">
             <h2 class="ml-5 mb-4 text-3xl font-bold">Monthly Expenses</h2>
             <p class="text-xl mb-3">Total: <?php echo $monthly_expenses; ?></p>
             <a href="view_monthly_expenses.php" class="text-blue-800 no-underline mr-5 font-bold hover:underline" >View Monthly Expenses</a>
@@ -79,9 +79,9 @@ if ($result->num_rows > 0) {
     </div>
 
     <div class="actions">
-        <a href="add_expense.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Add Expense</a>
-        <a href="view_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">See All Expenses</a>
-        <a href="graphical_view.php" class="block no-underline text-blue-500 text-2xl  p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Graphical view</a>
+        <a href="add_expense.php" class=" no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300" >Add Expense</a>
+        <a href="view_expenses.php" class=" no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">See All Expenses</a>
+        <a href="graphical_view.php" class=" no-underline text-blue-500 text-2xl  p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Graphical view</a>
     </div>
 </div>
 <?php

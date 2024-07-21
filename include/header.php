@@ -37,7 +37,6 @@ include 'db.php';
     <div class=" header w-full text-white flex items-center justify-between h-16 max-w-full break-words">
         <h1 class="ml-5 mb-4 text-3xl font-bold">eTrack</h1>
         <nav>
-            
             <?php if (!isset($_SESSION['user_id'])): ?>
                 <a href="index.php" class="text-white no-underline mr-5 font-bold hover:underline">Home</a>
                 <a href="signup.php" class="text-white no-underline mr-5 font-bold hover:underline">Sign Up</a>

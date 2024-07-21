@@ -101,9 +101,9 @@ if ($result_daily->num_rows > 0) {
     </script>
 
     <div class="actions">
-        <a href="view_daily_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Daily Expenses</a>
-        <a href="view_weekly_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Weekly Expenses</a>
-        <a href="view_monthly_expenses.php" class="block no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Monthly Expenses</a>
+        <a href="view_daily_expenses.php" class=" no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Daily Expenses</a>
+        <a href="view_weekly_expenses.php" class=" no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Weekly Expenses</a>
+        <a href="view_monthly_expenses.php" class=" no-underline text-blue-500 text-2xl p-2 bg-gray-200 rounded-lg text-center mb-4 hover:bg-red-300">Monthly Expenses</a>
     </div>
 </div>
 
