@@ -51,9 +51,9 @@ $sql_categories = "SELECT DISTINCT category FROM expenses WHERE user_id='$user_i
 $result_categories = $conn->query($sql_categories);
 ?>
 
-<div class="bg-yellow-600 p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-4/5 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+<div class="bg-yellow-600 p-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-full mx-auto mb-10 break-words rounded-lg shadow-lg">
     <h1 class="ml-5 mb-9 text-3xl font-bold">Weekly Expenses (<?php echo $start_date; ?> to <?php echo $end_date; ?>)</h1>
-    <button onclick="window.location.href='view_expenses_graph.php?view=weekly'" class="mr-2 p-1 bg-red-400 mb-6 text-white hover:bg-red-600">View Graphical Representation</button>
+    <button onclick="window.location.href='view_expenses_graph.php?view=weekly'" class=" button mr-2 p-3 rounded-lg bg-red-400 mb-6 text-white bg-green-900 hover:bg-green-600">View Graphical Representation</button>
     <!-- Filter and Sort Options -->
     <div class="filter-form mb-5 flex flex-col lg:flex-row justify-between items-center">
         <div class="filter flex flex-col lg:flex-row items-center">
@@ -78,17 +78,17 @@ $result_categories = $conn->query($sql_categories);
         </div>
     </div>
 
-    <div class="expenses-container flex flex-col text-center">
+    <div class="expenses-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center  ">
         <?php if ($result->num_rows > 0): ?>
             <?php while ($expense = $result->fetch_assoc()): ?>
-                <div class="expense-item bg-gray-200 p-2 rounded-lg mb-4">
+                <div class="expense-item shadow-lg rounded-lg bg-gray-200 p-4  mb-4 hover-grow transition-transform duration-300 ease-in-out">
                     <h2 class="mt-0"><?php echo htmlspecialchars($expense['item_name']); ?></h2>
                     <p>Amount: <?php echo $expense['amount']; ?></p>
                     <p>Date: <?php echo $expense['date']; ?></p>
                     <p>Description: <?php echo htmlspecialchars($expense['description']); ?></p>
-                    <p>Category: <?php echo ucfirst($expense['category']); ?></p>
-                    <a href="edit_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-blue-500 hover:underline">Edit</a>
-                    <a href="delete_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-blue-500 hover:underline" onclick="return confirm('Are you sure you want to delete this expense?')">Delete</a>
+                    <p class="mb-4">Category: <?php echo ucfirst($expense['category']); ?></p>
+                    <a href="edit_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-gray-300 m-4 p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-blue-600">Edit</a>
+                    <a href="delete_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-gray-300 m-4  p-2 bg-red-900 rounded-lg text-center mb-4 hover:bg-red-600" onclick="return confirm('Are you sure you want to delete this expense?')">Delete</a>
                 </div>
             <?php endwhile; ?>
         <?php else: ?>

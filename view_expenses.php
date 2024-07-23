@@ -41,7 +41,7 @@ $sql = "SELECT * FROM expenses WHERE user_id='$user_id' $filter_query  $sort_que
 $result = $conn->query($sql);
 ?>
 
-<div class="bg-purple-500 p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-4/5 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
+<div class="bg-purple-500 p-5  shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-full mx-auto mb-14 break-words  rounded-lg">
     <h1 class="ml-5 mb-9 text-3xl font-bold">View Expenses</h1>
 
     <!-- Filter and Sort Options -->
@@ -68,17 +68,17 @@ $result = $conn->query($sql);
         </div>
     </div>
 
-    <div class="expenses-container flex flex-col text-center">
+    <div class="expenses-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center  ">
         <?php if ($result->num_rows > 0): ?>
             <?php while ($expense = $result->fetch_assoc()): ?>
-                <div class="expense-item bg-gray-200 p-2 rounded-lg mb-4">
-                    <h2  class="mt-0"><?php echo htmlspecialchars($expense['item_name']); ?></h2>
+                <div class="expense-item bg-gray-200 p-4 rounded-lg mb-4 hover-grow transition-transform duration-300 ease-in-out">
+                    <h2 class="mt-0"><?php echo htmlspecialchars($expense['item_name']); ?></h2>
                     <p>Amount: <?php echo $expense['amount']; ?></p>
                     <p>Date: <?php echo $expense['date']; ?></p>
                     <p>Description: <?php echo htmlspecialchars($expense['description']); ?></p>
-                    <p>Category: <?php echo ucfirst($expense['category']); ?></p>
-                    <a href="edit_expense.php?id=<?php echo $expense['id']; ?>"  class="no-underline text-blue-500 hover:underline">Edit</a>
-                    <a href="delete_expense.php?id=<?php echo $expense['id']; ?>"  class="no-underline text-blue-500 hover:underline" onclick="return confirm('Are you sure you want to delete this expense?')">Delete</a>
+                    <p class="mb-4">Category: <?php echo ucfirst($expense['category']); ?></p>
+                    <a href="edit_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-gray-300 m-4 p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-blue-600">Edit</a>
+                    <a href="delete_expense.php?id=<?php echo $expense['id']; ?>" class="no-underline text-gray-300 m-4  p-2 bg-red-900 rounded-lg text-center mb-4 hover:bg-red-600" onclick="return confirm('Are you sure you want to delete this expense?')">Delete</a>
                 </div>
             <?php endwhile; ?>
         <?php else: ?>
