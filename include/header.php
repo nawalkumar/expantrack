@@ -30,21 +30,34 @@ include 'db.php';
             }
             @keyframes button-colorchange{
                 0%{
-                   
                     transform: scale(1,1);
                 }
-                50%{
-                    
+                50%{ 
                     transform:scale(1.1,1.1);
                 }
                 100%{
-                   
                     transform:scale(1,1);
                 }
             }
             .button{
                 animation: button-colorchange 3s infinite linear;
             }
+            .movecontent {
+            position: absolute;
+            white-space: nowrap;
+            animation: moveRight 24s 0s infinite linear;
+        }
+        @keyframes moveRight {
+            0% {
+               left:-100%;
+            }
+            50%{
+                left:100%;
+            }
+            100% {
+                left:-100%;
+            }
+        }
     </style>
 
      <link rel="stylesheet" href="include/assets/styles.css" >

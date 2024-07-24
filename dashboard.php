@@ -82,7 +82,7 @@ if ($result->num_rows > 0) {
         </div>
     </div>
 
-    <div class="actions flex flex-col justify-center gap-4 my-10 pt-16 lg:flex-row lg:gap-6 mt-6">
+    <div class="actions flex flex-col justify-center gap-4 my-10 pt-16  lg:flex-row lg:gap-6 mt-6">
         <a href="add_expense.php" class=" no-underline text-gray-300 text-2xl p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600" >Add Expense</a>
         <a href="view_expenses.php" class=" no-underline text-gray-300 text-2xl p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600">See All Expenses</a>
         <a href="settime.php" class=" no-underline text-gray-300 text-2xl  p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600">set Time </a>
