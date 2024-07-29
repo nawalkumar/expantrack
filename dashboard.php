@@ -56,13 +56,6 @@ if ($result->num_rows > 0) {
     </div>
 </div>
 
-<!-- <section id="hero" class="hero bg-cover width-full text-white py-20" style="background-image: url('include/assets/hero.jpg');">
-        <div class="container mx-auto text-center fade-in">
-            <h1 class="text-4xl font-bold mb-4">Welcome to Our Website</h1>
-            <p class="mb-6">Discover our amazing features and benefits.</p>
-            <a href="#" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Get Started</a>
-        </div>
-</section> -->
 <div class="bg-gray-200 p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-full  mx-auto mb-13 break-words  rounded-lg">
     <div class="flex flex-col lg:flex-row lg:gap-2 justify-around  mb-5 text-center  ">
         <div  class="bg-red-500 p-5 rounded-lg w-full  mb-5 lg:mb-0 hover-grow transition-transform duration-300 ease-in-out rounded-lg">
@@ -88,6 +81,61 @@ if ($result->num_rows > 0) {
         <a href="settime.php" class=" no-underline text-gray-300 text-2xl  p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600">set Time </a>
     </div>
 </div>
+<!-- <div class="flex justify-center">
+        <div class="w-1/5 bg-blue-500 h-full p-4 overflow-auto">
+            <h1 class="text-4xl  font-bold mb-4 text-black">Add Expenses</h1>
+            <a href="add_expense.php" class=" no-underline text-gray-300 text-2xl p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600" >->>></a>
+        </div>
+        <div class="w-3/5 bg-purple-600 h-200 grid grid-rows-6 grid-cols-6 gap-2 p-2 " style="background-image: url('include/assets/expenses.jpg'); height: 60vh;" >
+            <div class="col-span-3 row-span-2 bg-aqua">
+                <img src="include/assets/others.jpg" alt="Image 1" >
+            </div>
+            <div class="col-span-3 row-span-3 bg-aqua">
+                <img src="include/assets/vegetable.jpg" alt="Image 2" >
+            </div>
+            <div class="col-span-3 row-span-3 bg-aqua">
+                <img src="include/assets/travel.jpg" alt="Image 3" >
+            </div>
+            
+            <div class="col-span-1 row-span-2 bg-aqua">
+                <img src="include/assets/medicine.jpg" alt="Image 5" >
+            </div>
+            <div class="col-span-2 row-span-3 bg-aqua">
+                <img src="include/assets/movies.jpg" alt="Image 4" >
+            </div>
+            <div class="col-span-4 row-span-1 bg-aqua">
+                <img src="include/assets/grocery.jpg" alt="Image 6" >
+            </div>
+        </div>
+</div>
+<div class="flex justify-center">
+<div class="w-3/5 bg-purple-600 h-200 grid grid-rows-6 grid-cols-6 gap-2 p-2 " style="background-image: url('include/assets/expenses.jpg'); height: 60vh;" >
+             <div class="col-span-3 row-span-2 bg-aqua">
+                <img src="include/assets/others.jpg" alt="Image 1" >
+            </div>
+            <div class="col-span-3 row-span-3 bg-aqua">
+                <img src="include/assets/vegetable.jpg" alt="Image 2" >
+            </div>
+            <div class="col-span-3 row-span-3 bg-aqua">
+                <img src="include/assets/travel.jpg" alt="Image 3" >
+            </div>
+            
+            <div class="col-span-1 row-span-2 bg-aqua">
+                <img src="include/assets/medicine.jpg" alt="Image 5" >
+            </div>
+            <div class="col-span-2 row-span-3 bg-aqua">
+                <img src="include/assets/movies.jpg" alt="Image 4" >
+            </div>
+            <div class="col-span-4 row-span-1 bg-aqua">
+                <img src="include/assets/grocery.jpg" alt="Image 6" >
+            </div> 
+        </div>
+        <div class="w-1/5 bg-blue-500  p-4 ">
+        <h1 class="text-4xl  font-bold mb-4 text-black">See All Expenses</h1>
+        <a href="view_expenses.php" class=" no-underline text-gray-300 text-2xl p-2 bg-purple-900 rounded-lg text-center mb-4 hover:bg-purple-600">->>></a>
+        </div>
+        
+</div> -->
 <?php
  include 'include/footer.php'; 
 ?>

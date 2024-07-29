@@ -10,6 +10,7 @@ include 'db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eTrack</title>
      <!-- <link rel="stylesheet" href="include/assets/style1.css"> -->
+      <!-- <link rel="stylesheet" href="stylegrid.css"> -->
      <style>
             @keyframes bg-color-change {
             0% {

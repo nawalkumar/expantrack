@@ -52,7 +52,7 @@ $result_categories = $conn->query($sql_categories);
     <div class="filter-form mb-5 flex flex-col lg:flex-row justify-between items-center">
         <div class="filter flex flex-col lg:flex-row items-center">
             <label class="mr-2 font-bold">Filter by Category:</label>
-            <select class="mr-2 p-1 mb-2 lg:mb-0" onchange="filterExpenses(this.value)">
+            <select class="mr-2 p-1 mb-2 lg:mb-0" require onchange="filterExpenses(this.value)">
                 <option value="all">All</option>
                 <option value="food" <?php if ($filter_category == 'food') echo 'selected'; ?>>Food</option>
                 <option value="electricity" <?php if ($filter_category == 'electricity') echo 'selected'; ?>>Electricity</option>
@@ -62,7 +62,7 @@ $result_categories = $conn->query($sql_categories);
         </div>
         <div class="sort flex flex-col lg:flex-row items-center mb-4 lg:mb-0">
             <label class="mr-2 font-bold">Sort by:</label>
-            <select class="mr-2 p-1 mb-2 lg:mb-0" onchange="sortExpenses(this.value)">
+            <select class="mr-2 p-1 mb-2 lg:mb-0" require  onchange="sortExpenses(this.value)">
                 <option value="date_desc" <?php if ($sort_by == 'date_desc') echo 'selected'; ?>>Date (Newest First)</option>
                 <option value="amount_asc" <?php if ($sort_by == 'amount_asc') echo 'selected'; ?>>Amount (Low to High)</option>
                 <option value="amount_desc" <?php if ($sort_by == 'amount_desc') echo 'selected'; ?>>Amount (High to Low)</option>
@@ -101,9 +101,5 @@ $result_categories = $conn->query($sql_categories);
     }
 </script>
 <?php include 'include/footer.php'; ?>
-<!-- <script>
-    document.body.style.backgroundColor = 'green';
-</script> -->
-
 </body>
 </html>

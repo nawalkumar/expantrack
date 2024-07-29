@@ -9,7 +9,6 @@ if (!isset($_SESSION['user_id'])) {
 $expense_id = $_GET['id'];
 $user_id = $_SESSION['user_id'];
 
-// Fetch expense details
 $sql = "SELECT * FROM expenses WHERE id='$expense_id' AND user_id='$user_id'";
 $result = $conn->query($sql);
 
