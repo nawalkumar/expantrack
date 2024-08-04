@@ -21,9 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "No user found with this email.";
     }
 }
-
 ?>
-
 <div class="bg-white p-5 mt-5 shadow-lg rounded-lg w-11/12 md:w-7/10 lg:w-1/2 mx-auto mb-14 break-words hover-grow transition-transform duration-300 ease-in-out rounded-lg">
     <h1 class="ml-5 mb-12 text-4xl font-bold">Login</h1>
     <form action="login.php" method="POST">
@@ -36,5 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php
  include 'include/footer.php'; 
 ?>
+
 </body>
 </html>

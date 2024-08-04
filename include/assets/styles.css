@@ -1,12 +1,26 @@
 .hover-grow:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .hover-grow:focus {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .wrap {
     word-wrap: break-word;
 }
+@keyframes animatepage {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.showpage {
+    animation: animatepage 6s ease-in-out forwards;
+    transform-origin: center; /* Ensures scaling happens from the center */
+}
+
 /* @keyframes bg-color-change {
     0% {
       background-color: #0e3fc6; 
@@ -91,4 +105,29 @@ body{
     grid-row-start: 6;
     grid-row-end:7;
     background-color:aqua;
+}
+@keyframes expandCircle {
+    0% {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+.expand-circle {
+    position: absolute;
+    background: #fff; /* or any color that matches your page */
+    z-index: 1000; /* Ensure it is above the page content */
+    animation: expandCircle 6s ease-in-out forwards;
 }

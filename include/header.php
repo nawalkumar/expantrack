@@ -59,11 +59,10 @@ include 'db.php';
                 left:-100%;
             }
         }
-    </style>
-
+</style>
      <link rel="stylesheet" href="include/assets/styles.css" >
 </head>
-<body  class="font-roboto bg-gray-300 flex flex-col items-center m-0 text-center">
+<body  class=" h-full font-roboto bg-gray-300 flex flex-col items-center m-0 text-center">
     <script src=include/assets/tailwind.js></script>
     <div class=" header w-full text-white flex items-center justify-between h-16 max-w-full break-words">
         <h1 class="ml-5 mb-4 text-3xl font-bold">eTrack</h1>

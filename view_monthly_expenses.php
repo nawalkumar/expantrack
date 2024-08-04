@@ -72,7 +72,7 @@ $result_categories = $conn->query($sql_categories);
         </div>
     </div>
 
-    <div class="expenses-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center  ">
+    <div class="expenses-container mb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center  ">
         <?php if ($result->num_rows > 0): ?>
             <?php while ($expense = $result->fetch_assoc()): ?>
                 <div class="expense-item bg-gray-200 p-4 rounded-lg shadow-lg mb-4 hover-grow transition-transform duration-300 ease-in-out">
