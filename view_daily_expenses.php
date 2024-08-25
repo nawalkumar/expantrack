@@ -51,7 +51,7 @@ $result_categories = $conn->query($sql_categories);
     <h1 class="ml-5 mb-9 text-3xl font-bold">Daily Expenses - <?php echo $today; ?></h1>
     <button onclick="window.location.href='view_expenses_graph.php?view=daily'" class=" button mr-2 p-3 rounded-lg bg-red-400 mb-6 text-white bg-green-900 hover:bg-green-600">View Graphical Representation</button>
 
-    <!-- Filter and Sort Options -->
+   
     <div class="filter-form mb-5 flex flex-col lg:flex-row justify-between items-center">
         <div class="filter flex flex-col lg:flex-row items-center mr-4">
             <label class="mr-2 font-bold">Filter by Category:</label>

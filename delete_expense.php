@@ -18,6 +18,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 ?>
+
 <?php
  include 'include/footer.php'; 
 ?>

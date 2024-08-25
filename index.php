@@ -54,10 +54,10 @@
     </div>
 </div>
 
-<div class="p-24 m-15 shadow-lg rounded-lg w-11/12 md:w-7/12 lg:w-10/12 mx-auto mt-12 mb-16 break-words hover:transform hover:scale-105 transition-transform duration-300 ease-in-out"style="background-image: url('include/assets/direct.jpg'); height: 40vh;">
+<div class="p-24 m-15 shadow-lg rounded-lg w-11/12 md:w-7/12 md:item-center lg:w-10/12 mx-auto mt-12 mb-16 break-words hover:transform hover:scale-105 transition-transform duration-300 ease-in-out"style="background-image: url('include/assets/direct.jpg'); height: 40vh;">
     <p class="text-xl mb-12 p-3 text-center">To remove your expenses managing problem</p>
     <div class="flex justify-center">
-        <a href="signup.php" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Let's Get Started</a>
+        <a href="signup.php" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded break-words">Let's Get Started</a>
     </div>
 </div>
 
